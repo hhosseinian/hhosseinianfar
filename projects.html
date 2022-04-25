@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Ongoing Projects (at OMCL)</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Home</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="contact.html">Contact</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-category">Projects</div>
+<div class="menu-item"><a href="projects.html" class="current">Channel&nbsp;Modeling</a></div>
+<div class="menu-item"><a href="projects.html#Passive_Loc">Passive&nbsp;Localization</a></div>
+<div class="menu-item"><a href="projects.html#CIR_Loc&gt;CIR-Based">CIR-Based&nbsp;Localization</a></div>
+<div class="menu-item"><a href="projects.html#Geometric_Loc">Camera-Based&nbsp;Localization</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Ongoing Projects (at OMCL)</h1>
+<div id="subtitle"><a id="Channel_Modeling"></a></div>
+</div>
+<h2>Probabilistic Model for Effect of Pedestrian on Indoor Optical Wireless Communication Systems</h2>
+<p><div><table style="border-collapse: collapse; border: none;">
+<tbody>
+<tr>
+<th scope="col " align="center"><figure><img  src="Shadowing_MultiCylindar1.png" alt="Hosseinianfar" width="280" height="210" /><figcaption>Illustration of probabilistic multilayer shadowing model.</figcaption></figure>
+</th>
+<th scope="col" align="center"><figure><img  src="Object_Radius_Ver3.png" alt="Hosseinianfar" width="250" height="210" /><figcaption>Empirical marginal distribution of the radius  of the  human body cloud from orientation and measurements  uncertainties.</figcaption></figure>
+</th>
+</tr>
+</tbody>
+</table></div>
+The shadowing effect is one of the most critical concerns in optical wireless communication (OWC) systems, causing the system performance to degrade drastically as the signal path is blocked by an obstruction. In this research, we introduce a probabilistic hierarchical model of shadowing that relies on  prior knowledge of object uncertainties such as its dimensions, as well as practical uncertainties like mobility and object detection error. Numerical results presented for both the line of sight (LOS) and non-line sight (NLOS) parts of the received OWC signal in indoor environments consider  a pedestrian as the main moving object. The result shows a maximum standard deviation of <img class="eq" src="eqs/6272037681056609-130.png" alt="10" style="vertical-align: -1px" /> nW from the randomness in the object's reflection, using the range of human body dimensions, when the location of the object is detected accurately; the variability  can increase by orders of magnitude considering mobility uncertainty as well as object detection error. The model presented also enables the network to predict LOS blockage based on perfect knowledge of the object location.</p>
+<h2>Passive Pedestrian Detection and Localization</h2>
+<p><a id="Passive_Loc"></a></p>
+<p><div><table style="border-collapse: collapse; border: none;">
+<tbody>
+<tr>
+<th scope="col " align="center"><figure><img  src="OD_Graphical.png" alt="Hosseinianfar" width="280" height="210" /><figcaption>Crowdsourcing the blockage link status from different users.</figcaption></figure>
+</th>
+<th scope="col" align="center"><figure><img  src="Observable_Zone_July30_2020.png" alt="Hosseinianfar" width="210" height="210" /><figcaption>Bird's-eye view illustrating the 2-D LOS blockage information.</figcaption></figure>
+</th>
+</tr>
+</tbody>
+</table></div>
+In this research, we develop a passive pedestrian detection and localization algorithm taking advantage of LOS blockage information of the links between user devices and transceivers on the ceiling. Although this technique can employ any short-wavelength transmission, we illustrate our algorithm on an optical wireless communication (OWC) system that uses LEDs as energy sources and photo-detectors as receivers. These algorithms are calibrated for pedestrians, as they are challenging obstacles that often cause catastrophic shadowing in indoor VLC networks. We consider the LOS blockage between the user equipment (UE) optical transceivers and a network of optical transceivers on the ceiling as the observation dataset. The VLC network crowdsources the Users&rsquo; locations and the blockage status of the resulting LOS links. The algorithm employs this dataset to detect pedestrians&rsquo; presence and estimate their locations and radii. In our example, the target objects are modeled as cylinders with random radii. The location of the object can be predicted using a quadratic programming approach and refined gradually by including new blockage information from new users or users moving to another location inside the room. Simulation results show that the root-mean-squared (RMS) error can be less than 1 cm and 8 cm for estimating the center and the radius of the object, respectively. You can find the corresponding publications as following: </p>
+<h2>Impulse Response-based Visible Light Indoor Positioning</h2>
+<p><a id="CIR_Loc"></a></p>
+<p><div><table style="border-collapse: collapse; border: none;">
+<tbody>
+<tr>
+<th scope="col " align="center"><figure><img  src="System_BigPic.png" alt="Hosseinianfar" width="220" height="220" /><figcaption>Illustration of optical wireless uplink channel.</figcaption></figure>
+</th>
+<th scope="col" align="center"><figure><img  src="Impulse_response_mag.png" alt="Hosseinianfar" width="320" height="220" /><figcaption>Optical wireless channel impulse response for different locations of the room.</figcaption></figure>
+</th>
+</tr>
+</tbody>
+</table></div>
+In this project, we present a proof of concept for exploiting the optical impulse response reflection components in localization than considering them as destructive noise. We introduce an uplink visible light indoor positioning system that estimates the position of the users in the network-side of a visible light communications (VLC) system. The initial simulation results show the root mean square (RMS) positioning accuracy of 25 cm and 5 cm for one and 4 PDs scenarios, respectively. You can find the corresponding publications as following: </p>
+<h1>Past Projects</h1>
+<p><a id="Geometric_Loc"></a></p>
+<h2>Geometrical Optical Positioning Algorithm Using Space-Color Coded Identifier</h2>
+<p><div><table style="border-collapse: collapse; border: none;">
+<tbody>
+<tr>
+<th scope="col " align="center"><figure><img  src="System_Setup_reduced.png" alt="Hosseinianfar" width="200" height="200" /><figcaption>Experimental setup.</figcaption></figure>
+</th>
+<th scope="col" align="center"><figure><img  src="azimFIG.png" alt="Hosseinianfar" width="200" height="200" /><figcaption>Orientation geometrical calculation.</figcaption></figure>
+</th>
+<th scope="col" align="center"><figure><img  src="Virtual_Plane.png" alt="Hosseinianfar" width="170" height="200" /><figcaption>Tilt compensation.</figcaption></figure>
+</th>
+</tr>
+</tbody>
+</table></div>
+In this project, we propose an accurate visible light indoor localization system for a smartphone using the commercial light-emitting diode (LED) panels, which are used primarily for lighting. Each of the designed lighting panels contains a space-color-coded identifier, a matrix with a unique pattern of spatially separated colored LEDs,  for labeling different positioning cells while the lighting color is kept white by balancing the number of different sets of colored LEDs. The advantage of this idea is that we do not use the time-frequency domain of visible light communication (VLC) networks resources for positioning signaling. Our positioning technique, called geometrical optics positioning algorithm (GOPA), is an angle of arrival (AOA)-based geometrical algorithm on smartphones to locate the device. The front-facing camera of the smartphone is used at the receiver side to capture the image. Experimental results show robust two-dimensional (2-D) and three-dimensional (3-D) positioning. The experimental mean positioning error for 2-D positioning is 0.54 cm, in case of ignoring the tilt. The experimental mean positioning errors for 3-D positioning are respectively 1.24 cm, and 1.85 cm for ideal non-tilted and non-oriented, and non-tilted but orientated scenarios. You can find the corresponding publications as following</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2021-09-17 23:25:47 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
